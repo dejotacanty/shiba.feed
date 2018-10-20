@@ -1,0 +1,28 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title= t("app_name")
+    = csrf_meta_tags
+
+    /The two below statements started misbehaving after a bundle install command
+
+    /= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    /= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body{:class => "#{body_class}"}
+    
+    / Main nav
+    .main-nav
+      %h1{style: "float: left; margin: 0;"} Shiba.feed
+      %div{style: "float: right;"}
+        %span{style: "font-size: 1.2em; margin-right: 5px;"} Home
+        %span{style: "font-size: 1.2em; margin-right: 5px;"} Gallery
+        %span{style: "font-size: 1.2em; margin-right: 5px;"} Categories
+
+    %div{style: "clear: both;"}
+      
+    %hr 
+
+    = render :flashes
+
+    -# Screen content
+    = yield

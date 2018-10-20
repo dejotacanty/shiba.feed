@@ -1,0 +1,12 @@
+- flash.each do |name, msg|
+  - if msg.is_a?(String)
+    - if name.to_s == 'notice'
+      %div{:class => "alert alert-success fade in m-b-15", style: "color: green;"}
+        %strong Success: 
+        = msg
+        %span.close{"data-dismiss" => "alert"} &times;
+    - elsif name.to_s == 'error'
+      %div{:class => "alert alert-danger fade in m-b-15"}
+        %strong{style: "color: red;"} Unexpected error occurred.
+        = msg
+        %span.close{"data-dismiss" => "alert"} &times;

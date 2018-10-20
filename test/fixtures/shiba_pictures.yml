@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_file_path: MyString
+  file_name: MyString
+  file_ext: MyString
+  file_dir: MyString
+
+two:
+  full_file_path: MyString
+  file_name: MyString
+  file_ext: MyString
+  file_dir: MyString
