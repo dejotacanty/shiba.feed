@@ -12,9 +12,11 @@
     
     / Main nav
     .main-nav
-      %h1{style: "float: left; margin: 0;"} Shiba.feed
+      %h1{style: "float: left; margin: 0;"} 
+      = link_to "Shiba.feed", root_path
       %div{style: "float: right;"}
-        %span{style: "font-size: 1.2em; margin-right: 5px;"} Home
+        %span{style: "font-size: 1.2em; margin-right: 5px;"} 
+        = link_to "Home", root_path
         %span{style: "font-size: 1.2em; margin-right: 5px;"} Gallery
         %span{style: "font-size: 1.2em; margin-right: 5px;"} Categories
 
